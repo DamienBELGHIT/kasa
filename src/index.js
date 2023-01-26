@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import Home from "./pages/Home"
 import Infos from "./pages/Infos"
 import NoPage from "./pages/NoPage"
+import House from "./pages/House"
 import Layout from "./components/Layout"
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
@@ -14,6 +15,7 @@ root.render(
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="a-propos" element={<Infos />} />
+          <Route path="house/:houseID" element={<House />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

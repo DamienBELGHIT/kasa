@@ -2,6 +2,7 @@ import { Outlet, Link } from "react-router-dom"
 import logo from "../assets/img/logo.png"
 import "../styles/base.css"
 import "../styles/header.css"
+import "../styles/footer.css"
 
 const Layout = () => {
   return (
@@ -22,7 +23,10 @@ const Layout = () => {
 
       <Outlet />
 
-      <footer>Footer</footer>
+      <footer>
+        <img src={logo} alt="Logo" />
+        <span>© 2020 Kasa. All rights reserved</span>
+      </footer>
     </div>
   )
 }

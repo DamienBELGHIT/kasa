@@ -1,8 +1,14 @@
+import banner from "../assets/img/banner.png"
+import "../styles/home.css"
+
 function Home() {
   return (
-    <div>
-      <h1>Home Page</h1>
-    </div>
+    <main>
+      <div className="banner">
+        <img src={banner} alt="banner" />
+        <h1>Chez vous, partout et ailleurs</h1>
+      </div>
+    </main>
   )
 }
 
