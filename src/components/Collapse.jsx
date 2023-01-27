@@ -1,32 +1,17 @@
-import { Outlet, Link } from "react-router-dom"
-import logo from "../assets/img/logo.png"
-import "../styles/base.css"
-import "../styles/header.css"
-import "../styles/footer.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons"
+import { useState } from "react"
+import "../styles/collapse.css"
 
-const Collapse = () => {
+function Collapse({ title, content }) {
+  const [opened, setOpened] = useState(false)
   return (
-    <div>
-      <header>
-        <img src={logo} alt="Logo" />
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Accueil</Link>
-            </li>
-            <li>
-              <Link to="/a-propos">A propos</Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
-
-      <Outlet />
-
-      <footer>
-        <img src={logo} alt="Logo" />
-        <span>© 2020 Kasa. All rights reserved</span>
-      </footer>
+    <div className={`collapse ${opened ? "open" : "close"}`}>
+      <div className="collapse-title" onClick={() => setOpened(!opened)}>
+        <span>{title}</span>
+        <FontAwesomeIcon icon={opened ? faChevronUp : faChevronDown} />
+      </div>
+      <p>{content}</p>
     </div>
   )
 }

@@ -1,0 +1,25 @@
+.collapse {
+  margin-bottom: 30px;
+}
+
+.collapse-title {
+  background-color: #ff6060;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  padding: 5px 30px;
+  border-radius: 5px;
+}
+
+p {
+  color: #ff6060;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 20px;
+}
+
+.close p {
+  display: none;
+}

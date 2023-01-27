@@ -4,7 +4,7 @@ import "../styles/base.css"
 import "../styles/header.css"
 import "../styles/footer.css"
 
-const Layout = () => {
+function Layout() {
   return (
     <div>
       <header>
