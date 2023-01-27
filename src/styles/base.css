@@ -11,3 +11,8 @@ a {
 main {
   margin: 50px;
 }
+
+ul {
+  list-style: none;
+  padding: 0;
+}
