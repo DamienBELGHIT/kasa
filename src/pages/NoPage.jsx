@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import "../styles/nopage.css"
 
-const NoPage = () => {
+function NoPage() {
   return (
     <main>
       <h1 className="error-title">404</h1>

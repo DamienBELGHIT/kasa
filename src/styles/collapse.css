@@ -10,16 +10,16 @@
   align-items: center;
   font-size: 24px;
   padding: 5px 30px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
-p {
+.collapse-content {
   color: #ff6060;
   background-color: #f7f7f7;
   margin: 0;
   padding: 20px;
 }
 
-.close p {
+.close .collapse-content {
   display: none;
 }

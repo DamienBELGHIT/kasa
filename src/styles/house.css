@@ -1,0 +1,76 @@
+.house-main {
+  color: #ff6060;
+}
+
+.house-infos h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.house-infos h2 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.house-tags {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.house-host {
+  display: flex;
+  align-items: center;
+}
+
+.house-host h2 {
+  width: min-content;
+  margin: 0;
+  margin-right: 10px;
+}
+
+.host-picture {
+  width: 64px;
+  height: 64px;
+  overflow: hidden;
+  border-radius: 50px;
+}
+
+.host-picture img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.house-collapses {
+  display: flex;
+  justify-content: space-between;
+}
+
+.house-collapses .collapse {
+  width: 48%;
+}
+
+.collapse-title span {
+  font-size: 18px;
+  padding: 13px 0px;
+}
+
+.house-profile {
+  text-align: right;
+}
+
+.house-infos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tag {
+  background-color: #ff6060;
+  margin-right: 5px;
+  padding: 5px 20px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+}

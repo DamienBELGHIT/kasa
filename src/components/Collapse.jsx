@@ -9,9 +9,12 @@ function Collapse({ title, content }) {
     <div className={`collapse ${opened ? "open" : "close"}`}>
       <div className="collapse-title" onClick={() => setOpened(!opened)}>
         <span>{title}</span>
-        <FontAwesomeIcon icon={opened ? faChevronUp : faChevronDown} />
+        <FontAwesomeIcon
+          className="collapse-arrow"
+          icon={opened ? faChevronUp : faChevronDown}
+        />
       </div>
-      <p>{content}</p>
+      <div className="collapse-content">{content}</div>
     </div>
   )
 }
