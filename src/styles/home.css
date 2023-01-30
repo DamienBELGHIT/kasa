@@ -1,11 +1,18 @@
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, 340px);
-  justify-content: space-around;
-  grid-gap: 60px;
-  margin: 0 10px;
+  justify-content: space-evenly;
   list-style-type: none;
-  padding: 56px 50px;
+  padding: 56px 0px;
   background: #f7f7f7;
   position: relative;
+  border-radius: 25px;
+  grid-gap: 50px;
+}
+
+@media only screen and (max-width: 767px) {
+  .card-container {
+    background: none;
+    padding: 0;
+  }
 }

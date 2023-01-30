@@ -21,6 +21,11 @@ nav a:hover {
   text-decoration: underline;
 }
 
+.selected a {
+  text-decoration: underline;
+  cursor: auto;
+}
+
 @media only screen and (max-width: 767px) {
   header {
     margin: 0px;

@@ -36,3 +36,10 @@
   width: 75%;
   font-size: 18px;
 }
+
+@media only screen and (max-width: 767px) {
+  .card {
+    width: 335px;
+    height: 255px;
+  }
+}

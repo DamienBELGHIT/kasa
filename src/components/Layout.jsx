@@ -3,18 +3,20 @@ import logo from "../assets/img/logo.png"
 import "../styles/base.css"
 import "../styles/header.css"
 import "../styles/footer.css"
+import { useLocation } from "react-router-dom"
 
 function Layout() {
+  const location = useLocation()
   return (
     <div>
       <header>
         <img src={logo} alt="Logo" />
         <nav>
           <ul>
-            <li>
+            <li className={location.pathname === "/" && "selected"}>
               <Link to="/">Accueil</Link>
             </li>
-            <li>
+            <li className={location.pathname === "/a-propos" && "selected"}>
               <Link to="/a-propos">A propos</Link>
             </li>
           </ul>
