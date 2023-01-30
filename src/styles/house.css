@@ -10,7 +10,7 @@
 .house-infos h2 {
   font-size: 18px;
   font-weight: 500;
-  margin-top: 0;
+  margin-top: 5px;
   margin-bottom: 20px;
 }
 
@@ -73,4 +73,23 @@
   color: white;
   text-align: center;
   font-size: 14px;
+}
+
+@media only screen and (max-width: 767px) {
+  .house-infos,
+  .house-collapses {
+    flex-direction: column;
+  }
+
+  .house-collapses .collapse {
+    width: 100%;
+  }
+
+  .house-profile {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
 }

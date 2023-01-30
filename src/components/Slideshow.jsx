@@ -22,6 +22,9 @@ function Slideshow({ images }) {
       )}
 
       <img src={images[imageIndex]} alt={images[imageIndex]} />
+      <span className="slide-index">
+        {imageIndex + 1}/{images.length}
+      </span>
 
       {images.length > 1 && (
         <button

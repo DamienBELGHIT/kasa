@@ -21,3 +21,20 @@
   text-decoration: underline;
   display: block;
 }
+
+@media only screen and (max-width: 767px) {
+  .error-title {
+    font-size: 96px;
+    padding-top: 100px;
+    margin-bottom: 0;
+  }
+
+  .error-subtitle {
+    font-size: 18px;
+    padding-bottom: 100px;
+  }
+
+  .error-link {
+    font-size: 14px;
+  }
+}

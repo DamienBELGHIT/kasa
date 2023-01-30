@@ -12,10 +12,20 @@
   object-fit: cover;
 }
 
+.slide-index {
+  color: black;
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  font-size: 18px;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
 .arrow-btn {
   background: none;
   border: 0;
-  color: white;
+  color: black;
   cursor: pointer;
   font-size: 96px;
 }
@@ -32,4 +42,10 @@
   top: 50%;
   right: 0;
   transform: translate(0, -50%);
+}
+
+@media only screen and (max-width: 767px) {
+  .arrow-btn {
+    font-size: 24px;
+  }
 }
