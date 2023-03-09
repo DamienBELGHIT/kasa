@@ -10,11 +10,7 @@ const housesList = JSON.parse(JSON.stringify(housesData))
 function Home() {
   return (
     <main>
-      <Banner
-        image={bannerImg}
-        description="Chez vous, partout et ailleurs"
-        classes="banner-small"
-      />
+      <Banner image={bannerImg} description="Chez vous, partout et ailleurs" />
       <ul className="card-container">
         {housesList &&
           housesList.map((house, index) => (

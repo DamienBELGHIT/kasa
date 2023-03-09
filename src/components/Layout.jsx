@@ -13,10 +13,14 @@ function Layout() {
         <img src={logo} alt="Logo" />
         <nav>
           <ul>
-            <li className={location.pathname === "/" && "selected"}>
+            <li className={location.pathname === "/" ? "selected" : undefined}>
               <Link to="/">Accueil</Link>
             </li>
-            <li className={location.pathname === "/a-propos" && "selected"}>
+            <li
+              className={
+                location.pathname === "/a-propos" ? "selected" : undefined
+              }
+            >
               <Link to="/a-propos">A propos</Link>
             </li>
           </ul>

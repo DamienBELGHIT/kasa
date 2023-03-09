@@ -13,7 +13,7 @@
 }
 
 .slide-index {
-  color: black;
+  color: white;
   position: absolute;
   top: 95%;
   left: 50%;
@@ -25,9 +25,11 @@
 .arrow-btn {
   background: none;
   border: 0;
-  color: black;
+  color: white;
   cursor: pointer;
   font-size: 96px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 .left {
