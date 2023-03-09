@@ -1,8 +1,7 @@
 import { Outlet, Link } from "react-router-dom"
-import logo from "../assets/img/logo.png"
-import "../styles/base.css"
-import "../styles/header.css"
-import "../styles/footer.css"
+import logo from "../../assets/img/logo.png"
+import "./header.css"
+import "./footer.css"
 import { useLocation } from "react-router-dom"
 
 function Layout() {

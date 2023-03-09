@@ -1,9 +1,9 @@
-import Banner from "../components/Banner"
-import bannerImg from "../assets/img/banner.png"
-import "../styles/home.css"
-import housesData from "../data/houses.json"
+import Banner from "../../components/Banner"
+import bannerImg from "../../assets/img/banner.png"
+import "./index.css"
+import housesData from "../../data/houses.json"
 import { Link } from "react-router-dom"
-import Card from "../components/Card"
+import Card from "../../components/Card"
 
 const housesList = JSON.parse(JSON.stringify(housesData))
 

@@ -6,6 +6,7 @@ import Infos from "./pages/Infos"
 import NoPage from "./pages/NoPage"
 import House from "./pages/House"
 import Layout from "./components/Layout"
+import "./index.css"
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
 root.render(

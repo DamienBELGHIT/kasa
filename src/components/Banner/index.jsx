@@ -1,4 +1,4 @@
-import "../styles/banner.css"
+import "./index.css"
 
 function Banner({ image, description }) {
   return (

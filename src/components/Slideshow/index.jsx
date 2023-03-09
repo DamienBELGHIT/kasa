@@ -1,4 +1,4 @@
-import "../styles/slideshow.css"
+import "./index.css"
 import { useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {

@@ -1,5 +1,5 @@
-import star from "../assets/img/star.png"
-import starEmpty from "../assets/img/starEmpty.png"
+import star from "../../assets/img/star.png"
+import starEmpty from "../../assets/img/starEmpty.png"
 
 function Rating({ rating }) {
   const stars = []

@@ -1,10 +1,10 @@
 import { useParams } from "react-router-dom"
-import Slideshow from "../components/Slideshow"
-import housesData from "../data/houses.json"
-import Collapse from "../components/Collapse"
-import Rating from "../components/Rating"
+import Slideshow from "../../components/Slideshow"
+import housesData from "../../data/houses.json"
+import Collapse from "../../components/Collapse"
+import Rating from "../../components/Rating"
 import { Navigate } from "react-router-dom"
-import "../styles/house.css"
+import "./index.css"
 
 const housesList = JSON.parse(JSON.stringify(housesData))
 

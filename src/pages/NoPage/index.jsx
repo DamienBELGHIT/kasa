@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import "../styles/nopage.css"
+import "./index.css"
 
 function NoPage() {
   return (
