@@ -21,6 +21,10 @@
   padding: 20px;
 }
 
+.close .collapse-arrow {
+  transform: rotate(-180deg);
+}
+
 .close .collapse-content {
   display: none;
 }

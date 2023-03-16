@@ -27,9 +27,13 @@
   border: 0;
   color: white;
   cursor: pointer;
-  font-size: 96px;
+  width: 64px;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
+}
+
+.arrow-btn.left img {
+  transform: rotate(180deg);
 }
 
 .left {

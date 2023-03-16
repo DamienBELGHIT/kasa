@@ -1,10 +1,6 @@
 import "./index.css"
 import { useState } from "react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {
-  faChevronLeft,
-  faChevronRight,
-} from "@fortawesome/free-solid-svg-icons"
+import arrowRight from "../../assets/img/ArrowRight.png"
 
 function Slideshow({ images }) {
   const [imageIndex, setimageIndex] = useState(0)
@@ -17,7 +13,7 @@ function Slideshow({ images }) {
             setimageIndex(imageIndex > 0 ? imageIndex - 1 : images.length - 1)
           }
         >
-          <FontAwesomeIcon icon={faChevronLeft} />
+          <img src={arrowRight} alt={"left"} />
         </button>
       )}
 
@@ -31,7 +27,7 @@ function Slideshow({ images }) {
           className="arrow-btn right"
           onClick={() => setimageIndex((imageIndex + 1) % images.length)}
         >
-          <FontAwesomeIcon icon={faChevronRight} />
+          <img src={arrowRight} alt={"right"} />
         </button>
       )}
     </div>
